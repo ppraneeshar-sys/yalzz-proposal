@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Yalzz ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.page{
+display:none;
+background:white;
+width:90%;
+max-width:550px;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+animation:fade .8s;
+}
+
+.page.active{
+display:block;
+}
+
+h1{
+color:#ff4d6d;
+margin-bottom:20px;
+}
+
+p{
+font-size:20px;
+line-height:1.8;
+color:#333;
+}
+
+button{
+margin-top:30px;
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:#ff4d6d;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e63956;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+<h1>Hey Yalzz ❤️</h1>
+
+<p>
+Naan panadhu thappu dhan pahh... 😔<br><br>
+
+Inime andha thappa pana maten.<br>
+Un trust ah naan kapathuven 💯<br><br>
+
+Idhuku aprm poi solli enatha maten pahh...<br>
+Ena nambu 🤌🏻❤️
+</p>
+
+<button onclick="nextPage(2)">Next ➜</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+
+<h1>Just One Thing... 💕</h1>
+
+<p>
+Nee dhan enoda lucky charm pah! ❤️<br><br>
+
+Nee vandhadhuku aprm dhan naan Sanchana va marandhu unkuda sandhosama irundhen. 🥺💕<br><br>
+
+Thirumba nama sanda potadhum en andha akka kita pesunen nu enaku therla... Sorry 😔<br><br>
+
+Indha oru vati ena nambu... 🤌🏻<br>
+Enoda motha love yum unaku kuduthu apdiye pathukaren. 💖
+</p>
+
+<button onclick="nextPage(3)">Next ➜</button>
+
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+
+<h1>One Last Request 🥺❤️</h1>
+
+<p>
+Thirumba ena inoru chance kudu pahh... 🥺<br><br>
+
+Unakaga kathukiteh iruken naan 🤌🏻🫠💕
+</p>
+
+<h2 style="color:#ff4d6d;margin-top:30px;">
+Will You Be My Girlfriend? ❤️
+</h2>
+
+</div>
+
+<script>
+
+function nextPage(page){
+document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+document.getElementById("page"+page).classList.add("active");
+}
+
+</script>
+
+</body>
+</html>
